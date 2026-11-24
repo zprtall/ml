@@ -42,3 +42,8 @@ for e in range(epochs):
         print(f"эпоха {e}: loss = {loss:.4f}")
 
 print(f"\nитог: w1={w1:.3f}, w2={w2:.3f}, b={b:.3f}, loss={loss:.4f}")
+
+while True:
+    a, c = map(float, input().split())
+    s = a * w1 + c * w2 - b
+    print(f"{sigmoid(s):.0f}")
